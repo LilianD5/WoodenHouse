@@ -30,9 +30,9 @@
     </div>
 
     <ul class="medias">
-        <li class="circle"><a href="#"><img src="./img/facebook.png" alt="Icone facebook" class="logo-medias"></li></a>
-        <li class="circle"><a href="#"><img src="./img/instagram.png" alt="Icone instagram" class="logo-medias"></li></a>
-        <li class="circle"><a href="#"><img src="./img/twitter.png" alt="Icone twitter" class="logo-medias"></li></a>
+        <li class="circle"><a href="#"><img src="./ressource/facebook.png" alt="Icone facebook" class="logo-medias"></li></a>
+        <li class="circle"><a href="#"><img src="./ressource/instagram.png" alt="Icone instagram" class="logo-medias"></li></a>
+        <li class="circle"><a href="#"><img src="./ressource/twitter.png" alt="Icone twitter" class="logo-medias"></li></a>
     </ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>

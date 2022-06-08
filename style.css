@@ -7,7 +7,7 @@ body {
     background: #333;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: url('./img/backgroung.jpg');
+    background: url('./ressource/backgroung.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
