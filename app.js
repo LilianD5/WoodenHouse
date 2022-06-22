@@ -1,3 +1,5 @@
+// function animation de la page d'accueil
+
 const titreSpans = document.querySelectorAll('h1 span');
 const sloganSpans = document.querySelectorAll('h2 span');
 
@@ -11,17 +13,21 @@ const medias = document.querySelectorAll('.circle');
 const address = document.querySelector('.address-container');
 
 
-window.addEventListener('load', () => {
+function anim(){
+    window.addEventListener('load', () => {
 
-    const TL = gsap.timeline({paused: true});
+        const TL = gsap.timeline({paused: true});
+    
+        TL
+        .staggerFrom(titreSpans, 1.8, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+        .staggerFrom(btns, 1, {opacity: 0, ease: "power2.out"}, 0.3, '-=1')
+        .staggerFrom(sloganSpans, 1, {top: '-2.6vw', opacity: 0, ease: "power2.out"}, 0, '-=1')
+        .from(logo, 0.8, {transform: "scale(0)", ease: "power1.out"}, '-=2')
+        .from(address, 4, {opacity: 0, ease: "power2.out"})
+        .staggerFrom(medias, 1, {right: -200, opacity: 0, ease: "power2.out"}, 0.3, '-=5');
+    
+        TL.play();
+    })
+}
 
-    TL
-    .staggerFrom(titreSpans, 1.8, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-    .staggerFrom(btns, 1, {opacity: 0, ease: "power2.out"}, 0.3, '-=1')
-    .staggerFrom(sloganSpans, 1, {top: '-2.6vw', opacity: 0, ease: "power2.out"}, 0, '-=1')
-    .from(logo, 0.8, {transform: "scale(0)", ease: "power1.out"}, '-=2')
-    .from(address, 4, {opacity: 0, ease: "power2.out"})
-    .staggerFrom(medias, 1, {right: -200, opacity: 0, ease: "power2.out"}, 0.3, '-=5');
-
-    TL.play();
-})
+anim();

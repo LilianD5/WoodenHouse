@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
 }
-body {
+
+/* Index */
+
+#body-index {
     background: #333;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -13,6 +16,9 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
+/* Index Titles */
+
 .container-title {
     position: absolute;
     top: 40vh;
@@ -22,7 +28,6 @@ h1 {
     text-transform: uppercase;
     font-size: 6vw;
     color: #f1f1f1;
-    font-family: Abril fatface, sans-serif;
 }
 h1 span {
     position: relative;
@@ -31,11 +36,13 @@ h2 {
     text-transform: uppercase;
     font-size: 2.6vw;
     color: #f1f1f1;
-    font-family: Abril fatface, sans-serif;
 }
 h2 span {
     position: relative;
 }
+
+/* Index Btns */
+
 .container-btns {
     position: relative;
     top: 50px;
@@ -68,48 +75,9 @@ h2 span {
 .btns:hover > a {
     color: #333;
 }
-/* .lines-left {
-    position: absolute;
-    top: 3vw;
-    left: 5%;
-}
-.lines-rigth{
-    position: absolute;
-    top: 3vw;
-    right: 5%;
-}
-.l1 {
-    width: 35vw;
-    height: 3px;
-    position: relative;
-    background: #f1f1f1;
-    border-radius: 5px;
-}
-.l2 {
-    width: 33vw;
-    height: 3px;
-    background: #f1f1f1;
-    border-radius: 5px;
-    position: relative;
-    top: 20px;
-}
-.l3 {
-    width: 35vw;
-    height: 3px;
-    position: relative;
 
-    background: #f1f1f1;
-    border-radius: 5px;
-}
-.l4 {
-    width: 33vw;
-    height: 3px;
-    background: #f1f1f1;
-    border-radius: 5px;
-    position: relative;
-    top: 20px;
-    float: right;
-} */
+/* Index Logo */
+
 .container-logo{
     position: absolute;
     left: 5%;
@@ -120,6 +88,9 @@ h2 span {
     width: 15.6vw;
     height: 15.6vw;
 }
+
+/* Index Media */
+
 .medias {
     list-style-type: none;
     position: absolute;
@@ -139,6 +110,9 @@ h2 span {
     width: 40px;
     height: 40px
 }
+
+/* Index Adress */
+
 .address-container{
     position: relative;
     top: 150px;
@@ -156,6 +130,8 @@ h2 span {
     width: 40px;
     margin-right: 20px;
 }
+
+/* Index Media Queries */
 
 @media screen and (min-width: 1920px) {
     h1{
@@ -260,5 +236,145 @@ h2 span {
     }
     .container-title {
         left: 0;
+    }
+}
+
+/* Discover */
+
+#body-discover{
+    background-color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section */
+
+.section{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 50vh);
+}
+#grid1{
+    grid-column: 1;
+    grid-row: 1;
+}
+#grid2{
+    grid-column: 1;
+    grid-row: 2;
+}
+#grid3{
+    grid-column: 1;
+    grid-row: 3;
+}
+#grid4{
+    grid-column: 1;
+    grid-row: 4;
+}
+#grid5{
+    grid-column: 2;
+    grid-row: 1;
+}
+#grid6{
+    grid-column: 2;
+    grid-row: 2;
+}
+#grid7{
+    grid-column: 2;
+    grid-row: 3;
+}
+#grid8{
+    grid-column: 2;
+    grid-row: 4;
+}
+figure{
+    overflow: hidden;
+    height: 50vh;
+}
+.grid-image > figure > img{
+    transition: all 1s ease-in-out;
+    width: 100%;
+    
+}
+.grid-image:hover > figure > img{
+    transform: scale(110%);
+    transition: all 2s ease-in-out;
+}
+#cigar{
+    width: inherit;
+    height: 100%;
+    position: relative;
+    left: -40%;
+}
+
+/* Text */
+
+.title-discover{
+    font-size: 2vw;
+    margin: 2.5vh;
+    color: #f1f1f1;
+}
+.text-discover{
+    font-size: 1vw;
+    margin: 0 2.5vh 2.5vh;
+    text-align: justify;
+    color: #dedede;
+}
+
+/* Logo */
+
+.logo-container{
+    height: auto;
+}
+
+/* Btns */
+
+.container-btns-discover{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 8vh 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .section{
+        grid-template-rows: repeat(4, 30vh);
+    }
+
+    figure{
+        height: 30vh;
+    }
+
+    .title-discover{
+        font-size: 24px;
+    }
+    .text-discover{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section{
+        width: 100%;
+        display: block;
+    }
+
+    #cigar{
+        left: 0;
+        width: 100%;
+    }
+
+    .grid-image{
+        grid-row: none !important;
+        grid-column: none !important;
+    }
+
+    .grid-text{
+        height: auto;
+    }
+
+    figure{
+        height: auto;
     }
 }

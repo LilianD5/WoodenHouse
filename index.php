@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" size="16x16" type="image/png" href="./ressource/logo_v3.png" />
+    <title>The Wooden House | Home</title>
 </head>
 
-<body>
+<body id="body-index">
     <header>
         <div class="container-logo">
             <a href="#"><img src="./ressource/logo_v3.png" alt="Logo de l'établissement The Wooden House" class="logo"></a>
@@ -20,7 +21,7 @@
         <h1><span>The </span><span>wooden </span><span>house </span></h1>
         <h2><span>Alehouse </span><span>since </span><span>1887</span></h2>
         <div class="container-btns">
-            <button class="btns b1">Discover</button>
+            <button class="btns b1"><a href="./discover.php">Discover</a></button>
             <button class="btns b2"><a href="./menu.php" target="blank">Menu</a></button>
         </div>
         <div class="address-container">
